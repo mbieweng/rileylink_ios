@@ -1,2 +1,2 @@
 github "mbieweng/LoopKit" "mb"
-
+github "maxkonovalov/MKRingProgressView" ~> 2.2

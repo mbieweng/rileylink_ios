@@ -134,7 +134,7 @@ extension PumpOpsSession {
 
 // MARK: - Single reads
 extension PumpOpsSession {
-    /// Retrieves the pump model from either the state or from the
+    /// Retrieves the pump model from either the state or from the cache
     ///
     /// - Parameter usingCache: Whether the pump state should be checked first for a known pump model
     /// - Returns: The pump model
@@ -162,6 +162,26 @@ extension PumpOpsSession {
         pump.pumpModel = pumpModel
 
         return pumpModel
+    }
+
+    /// Retrieves the pump firmware version
+    ///
+    /// - Returns: The pump firmware version as string
+    /// - Throws:
+    ///     - PumpCommandError.command
+    ///     - PumpCommandError.arguments
+    ///     - PumpOpsError.couldNotDecode
+    ///     - PumpOpsError.crosstalk
+    ///     - PumpOpsError.deviceError
+    ///     - PumpOpsError.noResponse
+    ///     - PumpOpsError.unexpectedResponse
+    ///     - PumpOpsError.unknownResponse
+    public func getPumpFirmwareVersion() throws -> String {
+        
+        try wakeup()
+        let body: GetPumpFirmwareVersionMessageBody = try session.getResponse(to: PumpMessage(settings: settings, type: .readFirmwareVersion), responseType: .readFirmwareVersion)
+        
+        return body.version
     }
 
     /// - Throws:
@@ -333,7 +353,7 @@ extension PumpOpsSession {
         let reservoir: ReadRemainingInsulinMessageBody = try session.getResponse(to: PumpMessage(settings: settings, type: .readRemainingInsulin), responseType: .readRemainingInsulin)
 
         return (
-            units: reservoir.getUnitsRemainingForStrokes(pumpModel.strokesPerUnit),
+            units: reservoir.getUnitsRemaining(insulinBitPackingScale: pumpModel.insulinBitPackingScale),
             clock: pumpClock
         )
     }
@@ -391,6 +411,13 @@ extension PumpOpsSession {
     public func pressButton(_ type: ButtonPressCarelinkMessageBody.ButtonType) throws {
         let message = PumpMessage(settings: settings, type: .buttonPress, body: ButtonPressCarelinkMessageBody(buttonType: type))
 
+        let _: PumpAckMessageBody = try runCommandWithArguments(message)
+    }
+    
+    /// - Throws: `PumpCommandError` specifying the failure sequence
+    public func setSuspendResumeState(_ state: SuspendResumeMessageBody.SuspendResumeState) throws {
+        let message = PumpMessage(settings: settings, type: .suspendResume, body: SuspendResumeMessageBody(state: state))
+        
         let _: PumpAckMessageBody = try runCommandWithArguments(message)
     }
 
@@ -561,7 +588,7 @@ extension PumpOpsSession {
         }
 
         do {
-            let message = PumpMessage(settings: settings, type: .bolus, body: BolusCarelinkMessageBody(units: units, strokesPerUnit: pumpModel.strokesPerUnit))
+            let message = PumpMessage(settings: settings, type: .bolus, body: BolusCarelinkMessageBody(units: units, insulinBitPackingScale: pumpModel.insulinBitPackingScale))
 
             if pumpModel.returnsErrorOnBolus {
                 // TODO: This isn't working as expected; this logic was probably intended to be in the catch block below
@@ -807,11 +834,11 @@ extension PumpOpsSession {
     ///     - PumpOpsError.deviceError
     ///     - PumpOpsError.noResponse
     ///     - PumpOpsError.rfCommsFailure
-    public func tuneRadio() throws -> FrequencyScanResults {
+    public func tuneRadio(attempts: Int = 3) throws -> FrequencyScanResults {
         let region = self.settings.pumpRegion
 
         do {
-            let results = try scanForPump(in: region.scanFrequencies, fallback: pump.lastValidFrequency)
+            let results = try scanForPump(in: region.scanFrequencies, fallback: pump.lastValidFrequency, tries: attempts)
             
             pump.lastValidFrequency = results.bestFrequency
             pump.lastTuned = Date()
@@ -881,7 +908,7 @@ extension PumpOpsSession {
     ///     - PumpOpsError.noResponse
     ///     - PumpOpsError.rfCommsFailure
     ///     - LocalizedError
-    private func scanForPump(in frequencies: [Measurement<UnitFrequency>], fallback: Measurement<UnitFrequency>?) throws -> FrequencyScanResults {
+    private func scanForPump(in frequencies: [Measurement<UnitFrequency>], fallback: Measurement<UnitFrequency>?, tries: Int = 3) throws -> FrequencyScanResults {
         
         var trials = [FrequencyTrial]()
         
@@ -896,7 +923,6 @@ extension PumpOpsSession {
         }
         
         for freq in frequencies {
-            let tries = 3
             var trial = FrequencyTrial(frequency: freq)
 
             try session.setBaseFrequency(freq)

@@ -7,6 +7,7 @@
 
 import CoreBluetooth
 import os.log
+import LoopKit
 
 
 public class RileyLinkDeviceManager: NSObject {
@@ -15,7 +16,9 @@ public class RileyLinkDeviceManager: NSObject {
     // Isolated to centralQueue
     private var central: CBCentralManager!
 
-    private let centralQueue = DispatchQueue(label: "com.rileylink.RileyLinkBLEKit.BluetoothManager.centralQueue", qos: .utility)
+    private let centralQueue = DispatchQueue(label: "com.rileylink.RileyLinkBLEKit.BluetoothManager.centralQueue", qos: .unspecified)
+
+    internal let sessionQueue = DispatchQueue(label: "com.rileylink.RileyLinkBLEKit.RileyLinkDeviceManager.sessionQueue", qos: .unspecified)
 
     // Isolated to centralQueue
     private var devices: [RileyLinkDevice] = [] {
@@ -159,7 +162,7 @@ extension RileyLinkDeviceManager {
         if let device = device {
             device.manager.peripheral = peripheral
         } else {
-            device = RileyLinkDevice(peripheralManager: PeripheralManager(peripheral: peripheral, configuration: .rileyLink, centralManager: central))
+            device = RileyLinkDevice(peripheralManager: PeripheralManager(peripheral: peripheral, configuration: .rileyLink, centralManager: central, queue: sessionQueue))
             device.setTimerTickEnabled(timerTickEnabled)
             device.setIdleListeningState(idleListeningState)
 

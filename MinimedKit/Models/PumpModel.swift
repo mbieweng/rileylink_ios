@@ -68,8 +68,13 @@ public enum PumpModel: String {
     }
     
     /// Newer models allow higher precision delivery, and have bit packing to accomodate this.
-    public var strokesPerUnit: Int {
+    public var insulinBitPackingScale: Int {
         return (generation >= 23) ? 40 : 10
+    }
+
+    /// Pulses per unit is the inverse of the minimum volume of delivery.
+    public var pulsesPerUnit: Int {
+        return (generation >= 23) ? 40 : 20
     }
 
     public var reservoirCapacity: Int {
@@ -86,6 +91,62 @@ public enum PumpModel: String {
     /// Even though this is capped by the system at 250 / 10 U, the message takes a UInt16.
     var usesTwoBytesForMaxBolus: Bool {
         return generation >= 23
+    }
+
+    public var supportedBasalRates: [Double] {
+        if generation >= 23 {
+            // 0.025 units (for rates between 0.0-0.975 U/h)
+            let rateGroup1 = ((0...39).map { Double($0) / Double(pulsesPerUnit) })
+            // 0.05 units (for rates between 1-9.95 U/h)
+            let rateGroup2 = ((20...199).map { Double($0) / Double(pulsesPerUnit/2) })
+            // 0.1 units (for rates between 10-35 U/h)
+            let rateGroup3 = ((100...350).map { Double($0) / Double(pulsesPerUnit/4) })
+            return rateGroup1 + rateGroup2 + rateGroup3
+        } else {
+            // 0.05 units for rates between 0.0-35U/hr
+            return (0...700).map { Double($0) / Double(pulsesPerUnit) }
+        }
+    }
+
+    public var maximumBolusVolume: Double {
+        return 25
+    }
+
+    public var maximumBasalRate: Double {
+        return 35
+    }
+
+    public var supportedBolusVolumes: [Double] {
+        return supportedBasalRates.filter { $0 <= maximumBolusVolume }
+    }
+
+    public var maximumBasalScheduleEntryCount: Int {
+        return 48
+    }
+
+    public var minimumBasalScheduleEntryDuration: TimeInterval {
+        return .minutes(30)
+    }
+
+    public var isDeliveryRateVariable: Bool {
+        return generation >= 23
+    }
+
+    public func bolusDeliveryTime(units: Double) -> TimeInterval {
+        let unitsPerMinute: Double
+        if isDeliveryRateVariable {
+            switch units {
+            case let u where u < 1.0:
+                unitsPerMinute = 0.75
+            case let u where u > 7.5:
+                unitsPerMinute = units / 5
+            default:
+                unitsPerMinute = 1.5
+            }
+        } else {
+            unitsPerMinute = 1.5
+        }
+        return TimeInterval(minutes: units / unitsPerMinute)
     }
 }
 
