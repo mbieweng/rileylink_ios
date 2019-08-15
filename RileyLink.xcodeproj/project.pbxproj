@@ -6,22 +6,7 @@
 	objectVersion = 47;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		43FB610120DDEF26002B996B /* Cartfile */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 43FB610420DDEF26002B996B /* Build configuration list for PBXAggregateTarget "Cartfile" */;
-			buildPhases = (
-				43FB610520DDEF32002B996B /* Build Carthage Dependencies */,
-			);
-			dependencies = (
-			);
-			name = Cartfile;
-			productName = Cartfile;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		111760C22280AE3D002B8BFD /* OverrideStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111760C12280AE3D002B8BFD /* OverrideStatus.swift */; };
 		2B19B9881DF3EF68006AB65F /* NewTimePumpEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19B9871DF3EF68006AB65F /* NewTimePumpEvent.swift */; };
 		2F962EC11E6872170070EFBD /* TimestampedHistoryEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F962EC01E6872170070EFBD /* TimestampedHistoryEventTests.swift */; };
 		2F962EC81E7074E60070EFBD /* BolusNormalPumpEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F962EC71E7074E60070EFBD /* BolusNormalPumpEventTests.swift */; };
@@ -90,7 +75,6 @@
 		4352A74720DED4AF00CAC200 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FB610B20DDF55F002B996B /* LoopKit.framework */; };
 		4352A74820DED80300CAC200 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EBE4501EAD238C0073A0B5 /* TimeInterval.swift */; };
 		4352A74920DED81D00CAC200 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EAD6BA1C826B92006DBA60 /* Data.swift */; };
-		4352A74A20DED87500CAC200 /* LoopKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43FB610B20DDF55F002B996B /* LoopKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4352A74B20DED87F00CAC200 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FB610B20DDF55F002B996B /* LoopKit.framework */; };
 		4352A74C20DED8C200CAC200 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FB610B20DDF55F002B996B /* LoopKit.framework */; };
 		4352A74D20DED8FC00CAC200 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FB610B20DDF55F002B996B /* LoopKit.framework */; };
@@ -155,7 +139,6 @@
 		43C246A91D8A31540031F8D1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C246931D8918AE0031F8D1 /* Crypto.framework */; };
 		43C246AA1D8A31540031F8D1 /* Crypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43C246931D8918AE0031F8D1 /* Crypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43C9071B1D863772002BAD29 /* MinimedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10D9BC11C8269D500378342 /* MinimedKit.framework */; };
-		43C9071C1D863782002BAD29 /* MinimedKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C10D9BC11C8269D500378342 /* MinimedKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43CA93291CB8CF22000026B5 /* ChangeTempBasalCarelinkMessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA93281CB8CF22000026B5 /* ChangeTempBasalCarelinkMessageBody.swift */; };
 		43CA932B1CB8CF76000026B5 /* ChangeTimeCarelinkMessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA932A1CB8CF76000026B5 /* ChangeTimeCarelinkMessageBody.swift */; };
 		43CA932E1CB8CFA1000026B5 /* ReadTempBasalCarelinkMessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA932C1CB8CFA1000026B5 /* ReadTempBasalCarelinkMessageBody.swift */; };
@@ -163,6 +146,7 @@
 		43CA93311CB97191000026B5 /* ReadTempBasalCarelinkMessageBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA93301CB97191000026B5 /* ReadTempBasalCarelinkMessageBodyTests.swift */; };
 		43CA93331CB9726A000026B5 /* ChangeTimeCarelinMessageBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA93321CB9726A000026B5 /* ChangeTimeCarelinMessageBodyTests.swift */; };
 		43CA93351CB9727F000026B5 /* ChangeTempBasalCarelinkMessageBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA93341CB9727F000026B5 /* ChangeTempBasalCarelinkMessageBodyTests.swift */; };
+		43CACE1A224844E200F90AF5 /* MinimedPumpManagerRecents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CACE19224844E200F90AF5 /* MinimedPumpManagerRecents.swift */; };
 		43CEC07420D0949B00F1BC19 /* ReadRemoteControlIDsMessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CEC07320D0949B00F1BC19 /* ReadRemoteControlIDsMessageBody.swift */; };
 		43CEC07620D099B400F1BC19 /* SetRemoteControlEnabledMessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CEC07520D099B400F1BC19 /* SetRemoteControlEnabledMessageBody.swift */; };
 		43CEC07820D0CF7200F1BC19 /* ReadRemoteControlIDsMessageBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CEC07720D0CF7200F1BC19 /* ReadRemoteControlIDsMessageBodyTests.swift */; };
@@ -615,6 +599,8 @@
 		C1FFB02421343EC200C50C1D /* OmniKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FFAF78213323CC00C50C1D /* OmniKit.framework */; };
 		C1FFB02521343F0300C50C1D /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FB610B20DDF55F002B996B /* LoopKit.framework */; };
 		C1FFB02621343F0600C50C1D /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FB610A20DDF55E002B996B /* LoopKitUI.framework */; };
+		D807D7D82289135D006BCDF0 /* BeepType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D807D7D72289135D006BCDF0 /* BeepType.swift */; };
+		D807D7DA228913EC006BCDF0 /* BeepConfigCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D807D7D9228913EC006BCDF0 /* BeepConfigCommand.swift */; };
 		E95D0660215D76E40072157B /* PodInfoFlashLogRecent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D065F215D76E40072157B /* PodInfoFlashLogRecent.swift */; };
 		E993D18C217E455000E489BF /* LogEventErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E993D18B217E455000E489BF /* LogEventErrorCode.swift */; };
 		E9C06B262150371700B602AD /* PodInfoConfiguredAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C06B252150371700B602AD /* PodInfoConfiguredAlerts.swift */; };
@@ -667,40 +653,12 @@
 			remoteGlobalIDString = C12EA236198B436800309FA4;
 			remoteInfo = RileyLink;
 		};
-		4352A71020DEC67300CAC200 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43FB610120DDEF26002B996B;
-			remoteInfo = Cartfile;
-		};
-		4352A71320DEC68700CAC200 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43FB610120DDEF26002B996B;
-			remoteInfo = Cartfile;
-		};
 		4352A72A20DEC9B700CAC200 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4352A72420DEC9B700CAC200;
 			remoteInfo = MinimedKitUI;
-		};
-		4352A73520DECAE900CAC200 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43FB610120DDEF26002B996B;
-			remoteInfo = Cartfile;
-		};
-		4352A74420DED49C00CAC200 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43FB610120DDEF26002B996B;
-			remoteInfo = Cartfile;
 		};
 		43722FB91CB9F7640038B7F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -715,6 +673,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 43722FAD1CB9F7630038B7F2;
 			remoteInfo = RileyLinkKit;
+		};
+		437DE4FC229BB0D1003B1074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43722FAD1CB9F7630038B7F2;
+			remoteInfo = RileyLinkKit;
+		};
+		437DE4FE229BB0E3003B1074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1FFAF77213323CC00C50C1D;
+			remoteInfo = OmniKit;
+		};
+		437DE500229BB0E9003B1074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D5E78D1FAF7BFB004ACDB7;
+			remoteInfo = RileyLinkKitUI;
 		};
 		43C246A21D891D6C0031F8D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -737,12 +716,68 @@
 			remoteGlobalIDString = 43D5E78D1FAF7BFB004ACDB7;
 			remoteInfo = RileyLinkKitUI;
 		};
-		43FB610820DDF509002B996B /* PBXContainerItemProxy */ = {
+		A9B839C422809D82004E745E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 43FB610120DDEF26002B996B;
-			remoteInfo = Cartfile;
+			remoteGlobalIDString = 43722FAD1CB9F7630038B7F2;
+			remoteInfo = RileyLinkKit;
+		};
+		A9B839C622809D8D004E745E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43722FAD1CB9F7630038B7F2;
+			remoteInfo = RileyLinkKit;
+		};
+		A9B839C822809D91004E745E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 431CE76E1F98564100255374;
+			remoteInfo = RileyLinkBLEKit;
+		};
+		A9B839CA22809DB3004E745E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 431CE76E1F98564100255374;
+			remoteInfo = RileyLinkBLEKit;
+		};
+		A9B839CC22809DC3004E745E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C10D9BC01C8269D500378342;
+			remoteInfo = MinimedKit;
+		};
+		A9B839CE22809DCF004E745E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C10D9BC01C8269D500378342;
+			remoteInfo = MinimedKit;
+		};
+		A9B839D022809DE7004E745E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43722FAD1CB9F7630038B7F2;
+			remoteInfo = RileyLinkKit;
+		};
+		A9B839D222809DF3004E745E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C10D9BC01C8269D500378342;
+			remoteInfo = MinimedKit;
+		};
+		A9B839D422809DF3004E745E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D5E78D1FAF7BFB004ACDB7;
+			remoteInfo = RileyLinkKitUI;
 		};
 		C10D9BCC1C8269D500378342 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -786,26 +821,12 @@
 			remoteGlobalIDString = C1B3830A1CD0665D00CE7782;
 			remoteInfo = NightscoutUploadKit;
 		};
-		C1C0BE28224BF75600C03B4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43FB610120DDEF26002B996B;
-			remoteInfo = Cartfile;
-		};
 		C1FFAF82213323CC00C50C1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C1FFAF77213323CC00C50C1D;
 			remoteInfo = OmniKit;
-		};
-		C1FFAF84213323CC00C50C1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C12EA236198B436800309FA4;
-			remoteInfo = RileyLink;
 		};
 		C1FFAF8B213323CC00C50C1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -821,27 +842,9 @@
 			remoteGlobalIDString = C1FFAFD8213323F900C50C1D;
 			remoteInfo = OmniKitUI;
 		};
-		C1FFB01F21343B9700C50C1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C12EA22F198B436800309FA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43FB610120DDEF26002B996B;
-			remoteInfo = Cartfile;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		43B6E0151D24E4610022E6D7 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				43C9071C1D863782002BAD29 /* MinimedKit.framework in CopyFiles */,
-				4352A74A20DED87500CAC200 /* LoopKit.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C10D9BB81C82614F00378342 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -873,7 +876,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		111760C12280AE3D002B8BFD /* OverrideStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideStatus.swift; sourceTree = "<group>"; };
 		2B19B9871DF3EF68006AB65F /* NewTimePumpEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTimePumpEvent.swift; sourceTree = "<group>"; };
 		2F962EBE1E678BAA0070EFBD /* PumpOpsSynchronousTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PumpOpsSynchronousTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2F962EC01E6872170070EFBD /* TimestampedHistoryEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimestampedHistoryEventTests.swift; sourceTree = "<group>"; };
@@ -943,13 +945,13 @@
 		43709AEB20E0056F00F941B3 /* RileyLinkKitUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RileyLinkKitUI.xcassets; sourceTree = "<group>"; };
 		43709AED20E008F300F941B3 /* SetupImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupImageTableViewCell.swift; sourceTree = "<group>"; };
 		43709AEF20E0120F00F941B3 /* SetupImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetupImageTableViewCell.xib; sourceTree = "<group>"; };
-		4370A3791FAF8A7400EC666A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.1.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
 		43722FAE1CB9F7630038B7F2 /* RileyLinkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RileyLinkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43722FB01CB9F7640038B7F2 /* RileyLinkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RileyLinkKit.h; sourceTree = "<group>"; };
 		43722FB21CB9F7640038B7F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43722FB71CB9F7640038B7F2 /* RileyLinkKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RileyLinkKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43722FC01CB9F7640038B7F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		437462381FA9287A00643383 /* RileyLinkDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RileyLinkDevice.swift; sourceTree = "<group>"; };
+		437DE508229C8A05003B1074 /* copy-frameworks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "copy-frameworks.sh"; sourceTree = "<group>"; };
 		4384C8C51FB92F8100D916E6 /* HistoryPage+PumpOpsSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryPage+PumpOpsSession.swift"; sourceTree = "<group>"; };
 		4384C8C71FB937E500D916E6 /* PumpSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumpSettings.swift; sourceTree = "<group>"; };
 		438D39211D19011700D40CA4 /* PlaceholderPumpEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderPumpEvent.swift; sourceTree = "<group>"; };
@@ -976,6 +978,7 @@
 		43CA93301CB97191000026B5 /* ReadTempBasalCarelinkMessageBodyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadTempBasalCarelinkMessageBodyTests.swift; sourceTree = "<group>"; };
 		43CA93321CB9726A000026B5 /* ChangeTimeCarelinMessageBodyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeTimeCarelinMessageBodyTests.swift; sourceTree = "<group>"; };
 		43CA93341CB9727F000026B5 /* ChangeTempBasalCarelinkMessageBodyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeTempBasalCarelinkMessageBodyTests.swift; sourceTree = "<group>"; };
+		43CACE19224844E200F90AF5 /* MinimedPumpManagerRecents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimedPumpManagerRecents.swift; sourceTree = "<group>"; };
 		43CEC07320D0949B00F1BC19 /* ReadRemoteControlIDsMessageBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadRemoteControlIDsMessageBody.swift; sourceTree = "<group>"; };
 		43CEC07520D099B400F1BC19 /* SetRemoteControlEnabledMessageBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetRemoteControlEnabledMessageBody.swift; sourceTree = "<group>"; };
 		43CEC07720D0CF7200F1BC19 /* ReadRemoteControlIDsMessageBodyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadRemoteControlIDsMessageBodyTests.swift; sourceTree = "<group>"; };
@@ -1005,8 +1008,8 @@
 		43DFB61420D3791A008A7BAE /* ChangeMaxBasalRateMessageBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeMaxBasalRateMessageBody.swift; sourceTree = "<group>"; };
 		43EBE4501EAD238C0073A0B5 /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 		43F348051D596270009933DC /* HKUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKUnit.swift; sourceTree = "<group>"; };
-		43FB610A20DDF55E002B996B /* LoopKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoopKitUI.framework; path = Carthage/Build/iOS/LoopKitUI.framework; sourceTree = "<group>"; };
-		43FB610B20DDF55F002B996B /* LoopKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoopKit.framework; path = Carthage/Build/iOS/LoopKit.framework; sourceTree = "<group>"; };
+		43FB610A20DDF55E002B996B /* LoopKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43FB610B20DDF55F002B996B /* LoopKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoopKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43FF221B1CB9B9DE00024F30 /* NSDateComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateComponents.swift; sourceTree = "<group>"; };
 		492526701E4521FB00ACBA5F /* NoteNightscoutTreatment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteNightscoutTreatment.swift; sourceTree = "<group>"; };
 		541688DA1DB820BF005B1891 /* ReadCurrentGlucosePageMessageBodyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadCurrentGlucosePageMessageBodyTests.swift; sourceTree = "<group>"; };
@@ -1514,6 +1517,8 @@
 		C1FFB0072133242C00C50C1D /* OmniKitUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = OmniKitUI.xcassets; sourceTree = "<group>"; };
 		C1FFB0082133242C00C50C1D /* OmnipodSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmnipodSettingsViewController.swift; sourceTree = "<group>"; };
 		C1FFB00C2133242C00C50C1D /* OmnipodPumpManagerSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmnipodPumpManagerSetupViewController.swift; sourceTree = "<group>"; };
+		D807D7D72289135D006BCDF0 /* BeepType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeepType.swift; sourceTree = "<group>"; };
+		D807D7D9228913EC006BCDF0 /* BeepConfigCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeepConfigCommand.swift; sourceTree = "<group>"; };
 		E95D065F215D76E40072157B /* PodInfoFlashLogRecent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodInfoFlashLogRecent.swift; sourceTree = "<group>"; };
 		E993D18B217E455000E489BF /* LogEventErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEventErrorCode.swift; sourceTree = "<group>"; };
 		E9C06B252150371700B602AD /* PodInfoConfiguredAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodInfoConfiguredAlerts.swift; sourceTree = "<group>"; };
@@ -1845,6 +1850,14 @@
 			path = RileyLinkKitTests;
 			sourceTree = "<group>";
 		};
+		437DE504229C898D003B1074 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				437DE508229C8A05003B1074 /* copy-frameworks.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		43C246941D8918AE0031F8D1 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
@@ -1891,16 +1904,17 @@
 				43D8709820DE1CB6006B549E /* MinimedPumpManager.swift */,
 				43D8709920DE1CB6006B549E /* MinimedPumpManagerError.swift */,
 				43D8709A20DE1CB6006B549E /* MinimedPumpManagerState.swift */,
-				2F962EC21E6873A10070EFBD /* PumpMessageSender.swift */,
+				43CACE19224844E200F90AF5 /* MinimedPumpManagerRecents.swift */,
 				435535DB1FB8B37E00CE5A23 /* PumpMessage+PumpOpsSession.swift */,
+				2F962EC21E6873A10070EFBD /* PumpMessageSender.swift */,
 				434AB0921CBA0DF600422F4A /* PumpOps.swift */,
 				C1A7215F1EC29C0B0080FAD7 /* PumpOpsError.swift */,
 				434AB0931CBA0DF600422F4A /* PumpOpsSession.swift */,
 				43D8709220DE1C80006B549E /* PumpOpsSession+LoopKit.swift */,
 				4384C8C71FB937E500D916E6 /* PumpSettings.swift */,
 				434AB0941CBA0DF600422F4A /* PumpState.swift */,
-				43D8709420DE1C91006B549E /* RileyLinkDevice.swift */,
 				C16E61212208C7A80069F357 /* ReservoirReading.swift */,
+				43D8709420DE1C91006B549E /* RileyLinkDevice.swift */,
 				C1F8B1DE223AB1DF00DD66CF /* MinimedDoseProgressEstimator.swift */,
 			);
 			path = PumpManager;
@@ -2107,6 +2121,7 @@
 				C1BB128621CB5603009A29B5 /* OmniKitPacketParser */,
 				C12EA239198B436800309FA4 /* Frameworks */,
 				C12EA238198B436800309FA4 /* Products */,
+				437DE504229C898D003B1074 /* Scripts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2140,7 +2155,6 @@
 				43FB610B20DDF55F002B996B /* LoopKit.framework */,
 				43FB610A20DDF55E002B996B /* LoopKitUI.framework */,
 				43CA93241CB8BB33000026B5 /* CoreBluetooth.framework */,
-				4370A3791FAF8A7400EC666A /* CoreBluetooth.framework */,
 				C12616431B685F0A001FAD87 /* CoreData.framework */,
 				C12EA23A198B436800309FA4 /* Foundation.framework */,
 				C12EA23C198B436800309FA4 /* CoreGraphics.framework */,
@@ -2226,6 +2240,7 @@
 				C13FD2F5215E743C005FC495 /* PodProgressStatus.swift */,
 				E993D18B217E455000E489BF /* LogEventErrorCode.swift */,
 				C11166AD2180D834000EEAAB /* AlertSlot.swift */,
+				D807D7D72289135D006BCDF0 /* BeepType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2355,7 +2370,6 @@
 				C1BAD1171E63984C009BA1C6 /* RadioAdapter.swift */,
 				C184875B20BC232F00ABE9E7 /* CorrectionRange.swift */,
 				C184875D20BCDB0000ABE9E7 /* ForecastError.swift */,
-				111760C12280AE3D002B8BFD /* OverrideStatus.swift */,
 			);
 			path = DeviceStatus;
 			sourceTree = "<group>";
@@ -2571,6 +2585,7 @@
 				C1FFAFA6213323E800C50C1D /* TempBasalExtraCommand.swift */,
 				C1FFAFA4213323E800C50C1D /* VersionResponse.swift */,
 				C11F6B7D21C9646300752BBC /* FaultConfigCommand.swift */,
+				D807D7D9228913EC006BCDF0 /* BeepConfigCommand.swift */,
 			);
 			path = MessageBlocks;
 			sourceTree = "<group>";
@@ -2592,14 +2607,14 @@
 		C1FFB0092133242C00C50C1D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C1FFB0082133242C00C50C1D /* OmnipodSettingsViewController.swift */,
 				C1FC49ED2135DD56007D0788 /* CommandResponseViewController.swift */,
-				C127D923215C002A0031799D /* PodSettingsSetupViewController.swift */,
-				C1FFB00C2133242C00C50C1D /* OmnipodPumpManagerSetupViewController.swift */,
-				C1F1A5E9215164FA00F0B820 /* PairPodSetupViewController.swift */,
 				C1F1A5EB2151F73F00F0B820 /* InsertCannulaSetupViewController.swift */,
-				C1F1A5ED2151FBA700F0B820 /* PodSetupCompleteViewController.swift */,
+				C1FFB00C2133242C00C50C1D /* OmnipodPumpManagerSetupViewController.swift */,
+				C1FFB0082133242C00C50C1D /* OmnipodSettingsViewController.swift */,
+				C1F1A5E9215164FA00F0B820 /* PairPodSetupViewController.swift */,
 				C168C3FF21AEF8DE00ADE90E /* PodReplacementNavigationController.swift */,
+				C127D923215C002A0031799D /* PodSettingsSetupViewController.swift */,
+				C1F1A5ED2151FBA700F0B820 /* PodSetupCompleteViewController.swift */,
 				C168C40121AFACA600ADE90E /* ReplacePodViewController.swift */,
 			);
 			path = ViewControllers;
@@ -2695,7 +2710,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C1C0BE29224BF75600C03B4D /* PBXTargetDependency */,
 			);
 			name = RileyLinkBLEKit;
 			productName = RileyLinkBLEKit;
@@ -2733,7 +2747,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				4352A73620DECAE900CAC200 /* PBXTargetDependency */,
+				A9B839D322809DF3004E745E /* PBXTargetDependency */,
+				A9B839D522809DF3004E745E /* PBXTargetDependency */,
 			);
 			name = MinimedKitUI;
 			productName = MinimedKitUI;
@@ -2752,7 +2767,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4352A71120DEC67300CAC200 /* PBXTargetDependency */,
+				A9B839CB22809DB3004E745E /* PBXTargetDependency */,
 			);
 			name = RileyLinkKit;
 			productName = RileyLinkKit;
@@ -2808,7 +2823,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				43FB610920DDF509002B996B /* PBXTargetDependency */,
+				A9B839D122809DE7004E745E /* PBXTargetDependency */,
 			);
 			name = RileyLinkKitUI;
 			productName = RileyLinkKitUI;
@@ -2827,7 +2842,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				4352A71420DEC68700CAC200 /* PBXTargetDependency */,
+				A9B839C722809D8D004E745E /* PBXTargetDependency */,
+				A9B839C922809D91004E745E /* PBXTargetDependency */,
 			);
 			name = MinimedKit;
 			productName = MinimedKit;
@@ -2866,7 +2882,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4352A74520DED49C00CAC200 /* PBXTargetDependency */,
 				43C246A31D891D6C0031F8D1 /* PBXTargetDependency */,
 				C10D9BD51C8269D500378342 /* PBXTargetDependency */,
 				43722FC21CB9F7640038B7F2 /* PBXTargetDependency */,
@@ -2893,6 +2908,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A9B839C522809D82004E745E /* PBXTargetDependency */,
 				C12EA258198B436900309FA4 /* PBXTargetDependency */,
 			);
 			name = RileyLinkTests;
@@ -2913,6 +2929,7 @@
 			);
 			dependencies = (
 				43C246A51D891DB80031F8D1 /* PBXTargetDependency */,
+				A9B839CD22809DC3004E745E /* PBXTargetDependency */,
 			);
 			name = NightscoutUploadKit;
 			productName = NightscoutUploadKit;
@@ -2926,11 +2943,12 @@
 				C1B383101CD0665D00CE7782 /* Sources */,
 				C1B383111CD0665D00CE7782 /* Frameworks */,
 				C1B383121CD0665D00CE7782 /* Resources */,
-				43B6E0151D24E4610022E6D7 /* CopyFiles */,
+				A9B839DC2280A178004E745E /* Copy Frameworks with Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A9B839CF22809DCF004E745E /* PBXTargetDependency */,
 				C1B383171CD0665D00CE7782 /* PBXTargetDependency */,
 				C1B383191CD0665D00CE7782 /* PBXTargetDependency */,
 			);
@@ -2968,7 +2986,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C1FFB02021343B9700C50C1D /* PBXTargetDependency */,
+				437DE4FD229BB0D1003B1074 /* PBXTargetDependency */,
 			);
 			name = OmniKit;
 			productName = OmniKit;
@@ -2987,7 +3005,6 @@
 			);
 			dependencies = (
 				C1FFAF83213323CC00C50C1D /* PBXTargetDependency */,
-				C1FFAF85213323CC00C50C1D /* PBXTargetDependency */,
 			);
 			name = OmniKitTests;
 			productName = OmniKitTests;
@@ -3006,6 +3023,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				437DE501229BB0E9003B1074 /* PBXTargetDependency */,
+				437DE4FF229BB0E3003B1074 /* PBXTargetDependency */,
 			);
 			name = OmniKitUI;
 			productName = OmniKitUI;
@@ -3018,13 +3037,13 @@
 		C12EA22F198B436800309FA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1000;
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Pete Schwamb";
 				TargetAttributes = {
 					431CE76E1F98564100255374 = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 					431CE7761F98564200255374 = {
@@ -3035,12 +3054,12 @@
 					};
 					4352A72420DEC9B700CAC200 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 					43722FAD1CB9F7630038B7F2 = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 					43722FB61CB9F7640038B7F2 = {
 						CreatedOnToolsVersion = 7.3;
@@ -3049,21 +3068,17 @@
 					};
 					43C246921D8918AE0031F8D1 = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 					43D5E78D1FAF7BFB004ACDB7 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
-					};
-					43FB610120DDEF26002B996B = {
-						CreatedOnToolsVersion = 9.4.1;
-						ProvisioningStyle = Automatic;
 					};
 					C10D9BC01C8269D500378342 = {
 						CreatedOnToolsVersion = 7.2.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 					C10D9BC91C8269D500378342 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -3071,7 +3086,8 @@
 						TestTargetID = C12EA236198B436800309FA4;
 					};
 					C12EA236198B436800309FA4 = {
-						LastSwiftMigration = 1000;
+						DevelopmentTeam = JWS46GTGXX;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					C12EA251198B436800309FA4 = {
@@ -3080,7 +3096,7 @@
 					};
 					C1B3830A1CD0665D00CE7782 = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 					C1B383131CD0665D00CE7782 = {
 						CreatedOnToolsVersion = 7.3;
@@ -3088,12 +3104,11 @@
 					};
 					C1BB128421CB5603009A29B5 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = UY678SP37Q;
 						ProvisioningStyle = Automatic;
 					};
 					C1FFAF77213323CC00C50C1D = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 					C1FFAF7F213323CC00C50C1D = {
@@ -3104,17 +3119,16 @@
 					};
 					C1FFAFD8213323F900C50C1D = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 				};
 			};
 			buildConfigurationList = C12EA232198B436800309FA4 /* Build configuration list for PBXProject "RileyLink" */;
 			compatibilityVersion = "Xcode 6.3";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				es,
 				ru,
@@ -3145,7 +3159,6 @@
 				431CE7761F98564200255374 /* RileyLinkBLEKitTests */,
 				43D5E78D1FAF7BFB004ACDB7 /* RileyLinkKitUI */,
 				4352A72420DEC9B700CAC200 /* MinimedKitUI */,
-				43FB610120DDEF26002B996B /* Cartfile */,
 				C1FFAF77213323CC00C50C1D /* OmniKit */,
 				C1FFAF7F213323CC00C50C1D /* OmniKitTests */,
 				C1FFAFD8213323F900C50C1D /* OmniKitUI */,
@@ -3306,8 +3319,8 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/LoopKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/LoopKitUI.framework",
+				"$(BUILT_PRODUCTS_DIR)/LoopKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/LoopKitUI.framework",
 			);
 			name = "Copy Frameworks with Carthage";
 			outputPaths = (
@@ -3316,21 +3329,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "${SRCROOT}/Scripts/copy-frameworks.sh\n";
 		};
-		43FB610520DDEF32002B996B /* Build Carthage Dependencies */ = {
+		A9B839DC2280A178004E745E /* Copy Frameworks with Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Build Carthage Dependencies";
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/LoopKit.framework",
+			);
+			name = "Copy Frameworks with Carthage";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LoopKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$CARTHAGE\" = \"YES\" ]; then\n    echo \"Skipping carthage build because we're already in one\"\nelif [ -d $PROJECT_DIR/../../../Loop.xcworkspace ]; then\n    echo \"Skipping carthage build because we're in a workspace\"\nelif [ -f $PROJECT_DIR/.gitmodules ]; then\n    echo \"Skipping checkout due to presence of .gitmodules file\"\nif [ $ACTION = \"install\" ]; then\n    echo \"You're installing: Make sure to keep all submodules up-to-date and run carthage build after changes.\"\nfi\nelse\n    echo \"Bootstrapping carthage dependencies\"\n    unset LLVM_TARGET_TRIPLE_SUFFIX\n    /usr/local/bin/carthage bootstrap --project-directory \"$SRCROOT\" --cache-builds\nfi\n";
+			shellScript = "CARTHAGE_BUILD_DIR=\"${SRCROOT}/Carthage/Build\"\nif [ -n \"${IPHONEOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/iOS\"\nelif [ -n \"${WATCHOS_DEPLOYMENT_TARGET}\" ]; then\n    CARTHAGE_BUILD_DIR=\"${CARTHAGE_BUILD_DIR}/watchOS\"\nelse\n    echo \"ERROR: Unexpected deployment target type\"\n    exit 1\nfi\n\nfor SCRIPT_INPUT_FILE in ${!SCRIPT_INPUT_FILE_*}; do\n    CARTHAGE_BUILD_FILE=\"${!SCRIPT_INPUT_FILE/${BUILT_PRODUCTS_DIR}/${CARTHAGE_BUILD_DIR}}\"\n    if [ -e \"${CARTHAGE_BUILD_FILE}\" ]; then\n        if [ -e \"${SCRIPT_INPUT_FILE}\" ]; then\n            echo \"ERROR: Duplicate frameworks found at:\"\n            echo \"  ${SCRIPT_INPUT_FILE}\"\n            echo \"  ${CARTHAGE_BUILD_FILE}\"\n            exit 1\n        fi\n        echo \"Substituting \\\"${CARTHAGE_BUILD_FILE}\\\" for \\\"${!SCRIPT_INPUT_FILE}\\\"\"\n        export ${SCRIPT_INPUT_FILE}=\"${CARTHAGE_BUILD_FILE}\"\n    fi\ndone\n\necho \"Copy Frameworks with Carthage\"\ncarthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -3575,6 +3594,7 @@
 				C1EAD6CE1C826B92006DBA60 /* ReadSettingsCarelinkMessageBody.swift in Sources */,
 				C1F0004C1EBE68A600F65163 /* DataFrameMessageBody.swift in Sources */,
 				C12198AD1C8F332500BC374C /* TimestampedPumpEvent.swift in Sources */,
+				43CACE1A224844E200F90AF5 /* MinimedPumpManagerRecents.swift in Sources */,
 				C1F6EB891F89C3E200CFE393 /* FourByteSixByteEncoding.swift in Sources */,
 				54BC44751DB46B0A00340EED /* GlucosePage.swift in Sources */,
 				C1EAD6C51C826B92006DBA60 /* Int.swift in Sources */,
@@ -3774,7 +3794,6 @@
 				43F348061D596270009933DC /* HKUnit.swift in Sources */,
 				C133CF931D5943780034B82D /* PredictedBG.swift in Sources */,
 				C1D00E9D1E8986A400B733B7 /* PumpSuspendTreatment.swift in Sources */,
-				111760C22280AE3D002B8BFD /* OverrideStatus.swift in Sources */,
 				C1AF21E41D4865320088C41D /* LoopStatus.swift in Sources */,
 				43EBE4541EAD23EC0073A0B5 /* TimeInterval.swift in Sources */,
 				C13D155A1DAACE8400ADC044 /* Either.swift in Sources */,
@@ -3879,6 +3898,7 @@
 				C13BD643214033E5006D7F19 /* UnfinalizedDose.swift in Sources */,
 				C1FFAFD1213323E900C50C1D /* ConfigureAlertsCommand.swift in Sources */,
 				C1FFAFBE213323E900C50C1D /* CRC16.swift in Sources */,
+				D807D7DA228913EC006BCDF0 /* BeepConfigCommand.swift in Sources */,
 				C1FFAFCD213323E900C50C1D /* ConfigurePodCommand.swift in Sources */,
 				E9EE3370214ED01200888876 /* PodInfoFaultEvent.swift in Sources */,
 				E9E54AB421542E8A00E319B8 /* PodInfoResetStatus.swift in Sources */,
@@ -3887,6 +3907,7 @@
 				C1FFB01921332A7100C50C1D /* IdentifiableClass.swift in Sources */,
 				C1FFAFC1213323E900C50C1D /* Notification.swift in Sources */,
 				C1FFAFC0213323E900C50C1D /* CRC8.swift in Sources */,
+				D807D7D82289135D006BCDF0 /* BeepType.swift in Sources */,
 				E9EDD477215BED3500A103D1 /* PodInfoTester.swift in Sources */,
 				C1FFAFCB213323E900C50C1D /* BasalScheduleExtraCommand.swift in Sources */,
 				C1CB13A521383F1E00F9EEDA /* LocalizedString.swift in Sources */,
@@ -3989,30 +4010,10 @@
 			target = C12EA236198B436800309FA4 /* RileyLink */;
 			targetProxy = 4327EEBA20E1E562002598CB /* PBXContainerItemProxy */;
 		};
-		4352A71120DEC67300CAC200 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 43FB610120DDEF26002B996B /* Cartfile */;
-			targetProxy = 4352A71020DEC67300CAC200 /* PBXContainerItemProxy */;
-		};
-		4352A71420DEC68700CAC200 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 43FB610120DDEF26002B996B /* Cartfile */;
-			targetProxy = 4352A71320DEC68700CAC200 /* PBXContainerItemProxy */;
-		};
 		4352A72B20DEC9B700CAC200 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4352A72420DEC9B700CAC200 /* MinimedKitUI */;
 			targetProxy = 4352A72A20DEC9B700CAC200 /* PBXContainerItemProxy */;
-		};
-		4352A73620DECAE900CAC200 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 43FB610120DDEF26002B996B /* Cartfile */;
-			targetProxy = 4352A73520DECAE900CAC200 /* PBXContainerItemProxy */;
-		};
-		4352A74520DED49C00CAC200 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 43FB610120DDEF26002B996B /* Cartfile */;
-			targetProxy = 4352A74420DED49C00CAC200 /* PBXContainerItemProxy */;
 		};
 		43722FBA1CB9F7640038B7F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4023,6 +4024,21 @@
 			isa = PBXTargetDependency;
 			target = 43722FAD1CB9F7630038B7F2 /* RileyLinkKit */;
 			targetProxy = 43722FC11CB9F7640038B7F2 /* PBXContainerItemProxy */;
+		};
+		437DE4FD229BB0D1003B1074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43722FAD1CB9F7630038B7F2 /* RileyLinkKit */;
+			targetProxy = 437DE4FC229BB0D1003B1074 /* PBXContainerItemProxy */;
+		};
+		437DE4FF229BB0E3003B1074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1FFAF77213323CC00C50C1D /* OmniKit */;
+			targetProxy = 437DE4FE229BB0E3003B1074 /* PBXContainerItemProxy */;
+		};
+		437DE501229BB0E9003B1074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43D5E78D1FAF7BFB004ACDB7 /* RileyLinkKitUI */;
+			targetProxy = 437DE500229BB0E9003B1074 /* PBXContainerItemProxy */;
 		};
 		43C246A31D891D6C0031F8D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4039,10 +4055,50 @@
 			target = 43D5E78D1FAF7BFB004ACDB7 /* RileyLinkKitUI */;
 			targetProxy = 43D5E7931FAF7BFB004ACDB7 /* PBXContainerItemProxy */;
 		};
-		43FB610920DDF509002B996B /* PBXTargetDependency */ = {
+		A9B839C522809D82004E745E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 43FB610120DDEF26002B996B /* Cartfile */;
-			targetProxy = 43FB610820DDF509002B996B /* PBXContainerItemProxy */;
+			target = 43722FAD1CB9F7630038B7F2 /* RileyLinkKit */;
+			targetProxy = A9B839C422809D82004E745E /* PBXContainerItemProxy */;
+		};
+		A9B839C722809D8D004E745E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43722FAD1CB9F7630038B7F2 /* RileyLinkKit */;
+			targetProxy = A9B839C622809D8D004E745E /* PBXContainerItemProxy */;
+		};
+		A9B839C922809D91004E745E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 431CE76E1F98564100255374 /* RileyLinkBLEKit */;
+			targetProxy = A9B839C822809D91004E745E /* PBXContainerItemProxy */;
+		};
+		A9B839CB22809DB3004E745E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 431CE76E1F98564100255374 /* RileyLinkBLEKit */;
+			targetProxy = A9B839CA22809DB3004E745E /* PBXContainerItemProxy */;
+		};
+		A9B839CD22809DC3004E745E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C10D9BC01C8269D500378342 /* MinimedKit */;
+			targetProxy = A9B839CC22809DC3004E745E /* PBXContainerItemProxy */;
+		};
+		A9B839CF22809DCF004E745E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C10D9BC01C8269D500378342 /* MinimedKit */;
+			targetProxy = A9B839CE22809DCF004E745E /* PBXContainerItemProxy */;
+		};
+		A9B839D122809DE7004E745E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43722FAD1CB9F7630038B7F2 /* RileyLinkKit */;
+			targetProxy = A9B839D022809DE7004E745E /* PBXContainerItemProxy */;
+		};
+		A9B839D322809DF3004E745E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C10D9BC01C8269D500378342 /* MinimedKit */;
+			targetProxy = A9B839D222809DF3004E745E /* PBXContainerItemProxy */;
+		};
+		A9B839D522809DF3004E745E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43D5E78D1FAF7BFB004ACDB7 /* RileyLinkKitUI */;
+			targetProxy = A9B839D422809DF3004E745E /* PBXContainerItemProxy */;
 		};
 		C10D9BCD1C8269D500378342 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4074,20 +4130,10 @@
 			target = C1B3830A1CD0665D00CE7782 /* NightscoutUploadKit */;
 			targetProxy = C1B3831E1CD0665D00CE7782 /* PBXContainerItemProxy */;
 		};
-		C1C0BE29224BF75600C03B4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 43FB610120DDEF26002B996B /* Cartfile */;
-			targetProxy = C1C0BE28224BF75600C03B4D /* PBXContainerItemProxy */;
-		};
 		C1FFAF83213323CC00C50C1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C1FFAF77213323CC00C50C1D /* OmniKit */;
 			targetProxy = C1FFAF82213323CC00C50C1D /* PBXContainerItemProxy */;
-		};
-		C1FFAF85213323CC00C50C1D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C12EA236198B436800309FA4 /* RileyLink */;
-			targetProxy = C1FFAF84213323CC00C50C1D /* PBXContainerItemProxy */;
 		};
 		C1FFAF8C213323CC00C50C1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4098,11 +4144,6 @@
 			isa = PBXTargetDependency;
 			target = C1FFAFD8213323F900C50C1D /* OmniKitUI */;
 			targetProxy = C1FFAFEC213323FA00C50C1D /* PBXContainerItemProxy */;
-		};
-		C1FFB02021343B9700C50C1D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 43FB610120DDEF26002B996B /* Cartfile */;
-			targetProxy = C1FFB01F21343B9700C50C1D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -4443,7 +4484,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/$(CARTHAGE_PLATFORM_PATH_$(PLATFORM_NAME))",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RileyLinkBLEKit/Info.plist;
@@ -4453,12 +4494,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.RileyLinkBLEKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2,4";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
@@ -4485,7 +4522,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/$(CARTHAGE_PLATFORM_PATH_$(PLATFORM_NAME))",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RileyLinkBLEKit/Info.plist;
@@ -4495,10 +4532,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.RileyLinkBLEKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos watchsimulator";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2,4";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
@@ -4525,7 +4558,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RileyLink.app/RileyLink";
 			};
@@ -4552,7 +4584,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.RileyLinkBLEKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RileyLink.app/RileyLink";
 			};
@@ -4569,8 +4600,6 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -4593,8 +4622,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -4611,8 +4638,6 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -4634,8 +4659,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -4659,7 +4682,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/$(CARTHAGE_PLATFORM_PATH_$(PLATFORM_NAME))",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = RileyLinkKit/Info.plist;
@@ -4669,11 +4692,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.RileyLinkKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2,4";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -4698,7 +4717,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/$(CARTHAGE_PLATFORM_PATH_$(PLATFORM_NAME))",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = RileyLinkKit/Info.plist;
@@ -4708,10 +4727,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.RileyLinkKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos watchsimulator";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2,4";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -4738,7 +4753,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RileyLink.app/RileyLink";
 			};
 			name = Debug;
@@ -4764,7 +4778,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.RileyLinkKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RileyLink.app/RileyLink";
 			};
 			name = Release;
@@ -4794,8 +4807,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
@@ -4825,8 +4836,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.Crypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
@@ -4864,8 +4873,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -4903,26 +4910,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		43FB610220DDEF26002B996B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		43FB610320DDEF26002B996B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -4944,7 +4933,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/$(CARTHAGE_PLATFORM_PATH_$(PLATFORM_NAME))",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = MinimedKit/Info.plist;
@@ -4954,11 +4943,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.MinimedKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2,4";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -4982,7 +4967,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/$(CARTHAGE_PLATFORM_PATH_$(PLATFORM_NAME))",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = MinimedKit/Info.plist;
@@ -4992,10 +4977,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.MinimedKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos watchsimulator";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2,4";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -5022,7 +5003,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RileyLink.app/RileyLink";
 			};
 			name = Debug;
@@ -5048,7 +5028,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.MinimedKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RileyLink.app/RileyLink";
 			};
 			name = Release;
@@ -5057,10 +5036,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CARTHAGE_PLATFORM_PATH_iphoneos = iOS;
-				CARTHAGE_PLATFORM_PATH_iphonesimulator = iOS;
-				CARTHAGE_PLATFORM_PATH_watchos = watchOS;
-				CARTHAGE_PLATFORM_PATH_watchsimulator = watchOS;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -5089,6 +5064,10 @@
 				CURRENT_PROJECT_VERSION = 46;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -5113,7 +5092,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				WARNING_CFLAGS = "-Wall";
@@ -5124,10 +5103,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CARTHAGE_PLATFORM_PATH_iphoneos = iOS;
-				CARTHAGE_PLATFORM_PATH_iphonesimulator = iOS;
-				CARTHAGE_PLATFORM_PATH_watchos = watchOS;
-				CARTHAGE_PLATFORM_PATH_watchsimulator = watchOS;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -5156,6 +5131,10 @@
 				CURRENT_PROJECT_VERSION = 46;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -5173,7 +5152,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -5189,7 +5168,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JWS46GTGXX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -5202,8 +5181,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RileyLink/RileyLink-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -5217,7 +5194,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JWS46GTGXX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -5229,8 +5206,6 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RileyLink/RileyLink-Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -5299,8 +5274,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
@@ -5330,8 +5303,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.NightscoutUploadKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
@@ -5357,7 +5328,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -5382,7 +5352,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.NightscoutUploadKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -5398,7 +5367,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = UY678SP37Q;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -5407,7 +5376,6 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -5424,20 +5392,20 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = UY678SP37Q;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		C1FFAF8F213323CC00C50C1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -5445,8 +5413,6 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 44;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -5470,8 +5436,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -5480,6 +5444,7 @@
 		C1FFAF90213323CC00C50C1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -5487,8 +5452,6 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 44;
@@ -5511,8 +5474,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -5542,7 +5503,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RileyLink.app/RileyLink";
 			};
@@ -5571,7 +5531,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.OmniKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RileyLink.app/RileyLink";
 			};
@@ -5580,6 +5539,7 @@
 		C1FFAFF1213323FA00C50C1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -5587,8 +5547,6 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 44;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -5612,8 +5570,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -5622,6 +5578,7 @@
 		C1FFAFF2213323FA00C50C1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -5629,8 +5586,6 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 44;
@@ -5653,8 +5608,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -5722,15 +5675,6 @@
 			buildConfigurations = (
 				43D5E7981FAF7BFB004ACDB7 /* Debug */,
 				43D5E7991FAF7BFB004ACDB7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		43FB610420DDEF26002B996B /* Build configuration list for PBXAggregateTarget "Cartfile" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				43FB610220DDEF26002B996B /* Debug */,
-				43FB610320DDEF26002B996B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
